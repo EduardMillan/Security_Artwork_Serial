@@ -60,7 +60,7 @@ namespace SecurityArtWorkSerialGenKey
                 new Int16[] { 1, 3, 5, 7, 9 }
             };
 
-            //  Si el indice actual contiene un valor >= 0x>F0 se resta 0xF y se toma el resultado obtenido
+            //  Si el indice actual contiene un valor >= 0xF0 se resta 0xF y se toma el resultado obtenido
             //  Sino se toma un valor aleatorio dentro de la lista de digitos indexada por 'lista[n]'
             for (Int16 i = 0; i < lista.Length; i++)
                 serial += ((lista[i] >= 0xF0) ? lista[i] & 0x0F : Digit(digits[lista[i]])).ToString();
