@@ -42,7 +42,7 @@ using System.Diagnostics;
  * Para indicar valores fijos se indica su valor + 0xF0.
 **/
 
-namespace SecurityArtWorkSerialGenKey
+namespace SecurityArtWorkSerialGenKey 
 {
     class Program
     {
